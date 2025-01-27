@@ -22,6 +22,7 @@ public class PickCountryFragment extends Fragment {
     }
 
     @Override
+    //per istanziare il fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pick_country, container, false);
@@ -32,7 +33,7 @@ public class PickCountryFragment extends Fragment {
                 );
 
         GridView gridView = view.findViewById(R.id.gridView);
-        gridView.setAdapter(adapter);
+        gridView.setAdapter(adapter); //la gridView chiamerà in automatico il metodo getView di CountryAdapter
 
         return view;
     }

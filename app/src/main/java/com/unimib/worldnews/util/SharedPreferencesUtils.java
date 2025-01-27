@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import java.util.Set;
-
+//questa classe implementa i metodi per scrivere e leggere dati da SharedPreferences
 public class SharedPreferencesUtils {
 
     private final Context context;
